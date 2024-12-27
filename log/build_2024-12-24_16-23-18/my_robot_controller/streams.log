@@ -1,0 +1,33 @@
+[0.502s] Invoking command in '/home/tufail39/ros2_ws_dod/src/my_robot_controller': PYTHONPATH=/home/tufail39/ros2_ws_dod/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/tufail39/ros2_ws_dod/build/my_robot_controller/build install --record /home/tufail39/ros2_ws_dod/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[0.712s] running egg_info
+[0.713s] creating ../../build/my_robot_controller/my_robot_controller.egg-info
+[0.713s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[0.713s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[0.713s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[0.713s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[0.714s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[0.714s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.715s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.715s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.716s] running build
+[0.716s] running build_py
+[0.716s] creating /home/tufail39/ros2_ws_dod/build/my_robot_controller/build
+[0.716s] creating /home/tufail39/ros2_ws_dod/build/my_robot_controller/build/lib
+[0.716s] creating /home/tufail39/ros2_ws_dod/build/my_robot_controller/build/lib/my_robot_controller
+[0.716s] copying my_robot_controller/__init__.py -> /home/tufail39/ros2_ws_dod/build/my_robot_controller/build/lib/my_robot_controller
+[0.716s] running install
+[0.716s] running install_lib
+[0.717s] creating /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.717s] copying /home/tufail39/ros2_ws_dod/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.717s] byte-compiling /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[0.717s] running install_data
+[0.718s] creating /home/tufail39/ros2_ws_dod/install/my_robot_controller/share/ament_index
+[0.718s] creating /home/tufail39/ros2_ws_dod/install/my_robot_controller/share/ament_index/resource_index
+[0.718s] creating /home/tufail39/ros2_ws_dod/install/my_robot_controller/share/ament_index/resource_index/packages
+[0.718s] copying resource/my_robot_controller -> /home/tufail39/ros2_ws_dod/install/my_robot_controller/share/ament_index/resource_index/packages
+[0.718s] copying package.xml -> /home/tufail39/ros2_ws_dod/install/my_robot_controller/share/my_robot_controller
+[0.718s] running install_egg_info
+[0.719s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[0.720s] running install_scripts
+[0.737s] writing list of installed files to '/home/tufail39/ros2_ws_dod/build/my_robot_controller/install.log'
+[0.754s] Invoked command in '/home/tufail39/ros2_ws_dod/src/my_robot_controller' returned '0': PYTHONPATH=/home/tufail39/ros2_ws_dod/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/tufail39/ros2_ws_dod/build/my_robot_controller/build install --record /home/tufail39/ros2_ws_dod/build/my_robot_controller/install.log --single-version-externally-managed install_data

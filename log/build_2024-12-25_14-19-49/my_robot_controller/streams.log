@@ -1,0 +1,24 @@
+[0.520s] Invoking command in '/home/tufail39/ros2_ws_dod/build/my_robot_controller': PYTHONPATH=/home/tufail39/ros2_ws_dod/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tufail39/ros2_ws_dod/build/my_robot_controller/build --no-deps symlink_data
+[0.749s] running develop
+[0.749s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.750s]   warnings.warn(
+[0.898s] running egg_info
+[0.898s] writing my_robot_controller.egg-info/PKG-INFO
+[0.898s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[0.898s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[0.898s] writing requirements to my_robot_controller.egg-info/requires.txt
+[0.898s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[0.900s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[0.900s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[0.901s] running build_ext
+[0.901s] Creating /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[0.902s] Installing draw_circle script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.902s] Installing publisher_test script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.902s] Installing subscriber script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.903s] Installing test_node script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.903s] Installing turtle_controller script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.903s] Installing turtlesim_pose_subscriber script to /home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/my_robot_controller
+[0.903s] 
+[0.903s] Installed /home/tufail39/ros2_ws_dod/build/my_robot_controller
+[0.903s] running symlink_data
+[0.925s] Invoked command in '/home/tufail39/ros2_ws_dod/build/my_robot_controller' returned '0': PYTHONPATH=/home/tufail39/ros2_ws_dod/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tufail39/ros2_ws_dod/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/tufail39/ros2_ws_dod/build/my_robot_controller/build --no-deps symlink_data
