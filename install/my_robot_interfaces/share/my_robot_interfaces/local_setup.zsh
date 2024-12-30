@@ -1,0 +1,1 @@
+/home/tufail39/ros2_ws_dod/build/my_robot_interfaces/ament_cmake_environment_hooks/local_setup.zsh

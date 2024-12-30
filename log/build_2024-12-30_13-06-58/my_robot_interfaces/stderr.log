@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:15 (ament_export_depedencies):
+  Unknown CMake command "ament_export_depedencies".
+
+[0m
