@@ -1,1 +1,0 @@
-/home/tufail39/ros2_ws_dod/build/my_robot_interfaces/ament_cmake_core/my_robot_interfacesConfig-version.cmake

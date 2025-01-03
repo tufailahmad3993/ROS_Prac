@@ -1,8 +1,0 @@
-[console_scripts]
-draw_circle = my_robot_controller.draw_circle:main
-publisher_test = my_robot_controller.publisher:main
-subscriber = my_robot_controller.subscriber:main
-test_node = my_robot_controller.my_first_node:main
-turtle_controller = my_robot_controller.turtle_controller:main
-turtlesim_pose_subscriber = my_robot_controller.turtlesim_pose_subscriber:main
-
