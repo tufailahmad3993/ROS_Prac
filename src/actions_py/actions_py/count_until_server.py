@@ -1,8 +1,9 @@
 import rclpy
 from rclpy.node import Node
 from my_robot_interfaces.action import CountUntil
-from rclpy.action import ActionServer, GoalResponse
-
+from rclpy.action import ActionServer, GoalResponse, CancelResponse
+from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.action.server import ServerGoalHandle
 import time
 
@@ -15,7 +16,9 @@ class CountUntilServerNode(Node):
             CountUntil,
             "count_until",
             goal_callback = self.goal_callback,
-            execute_callback = self.execute_callback)
+            cancel_callback= self.cancel_callback,
+            execute_callback = self.execute_callback,
+            callback_group=ReentrantCallbackGroup())
         self.get_logger().info("Action server has been started")
 
 
@@ -28,6 +31,10 @@ class CountUntilServerNode(Node):
             return GoalResponse.REJECT
         self.get_logger().info("Accepting the goal")
         return GoalResponse.ACCEPT
+    
+    def cancel_callback(self, goal_handle: ServerGoalHandle):
+        self.get_logger().info("Received a cancel request")
+        return CancelResponse.ACCEPT # or REJECT
 
     def execute_callback(self, goal_handle : ServerGoalHandle):
         # Get request from goal
@@ -37,9 +44,16 @@ class CountUntilServerNode(Node):
         # Execute the action
         self.get_logger().info("Executing the goal")
         feedback = CountUntil.Feedback()
+        result = CountUntil.Result()
         counter = 0
 
         for i in range(target_number):
+            if goal_handle.is_cancel_requested:
+                self.get_logger().info("Cancelling the goal")
+                goal_handle.canceled()
+                result.reached_number = counter
+                return result
+
             counter +=1
             self.get_logger().info(str(counter))
             feedback.current_number = counter
@@ -51,16 +65,14 @@ class CountUntilServerNode(Node):
         goal_handle.succeed()
 
         # send the results
-
-        results = CountUntil.Result()
-        results.reached_number = counter
-        return results
+        result.reached_number = counter
+        return result
 
 
 def main(args = None):
     rclpy.init(args=args)
     node = CountUntilServerNode()
-    rclpy.spin(node)
+    rclpy.spin(node, MultiThreadedExecutor())
     rclpy.shutdown()
 
 
